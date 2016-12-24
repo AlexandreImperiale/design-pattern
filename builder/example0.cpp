@@ -1,10 +1,12 @@
 #include <iostream>
 
+//
 // User-defined class.
 // We want to be sure that a specific constrain is satisfied by any instances of
 // the T class. For example, this class has 4 doubles, and we want to be sure that
 // d0 < d1 < d2 < d3, otherwise a specific behavior is followed, e.g. an excpetion is
 // thrown.
+//
 class T {
 
 public:
@@ -18,7 +20,9 @@ private:
 
 };
 
+//
 // Builder class.
+//
 class TBuilder {
 
 public:
@@ -46,6 +50,9 @@ private:
   T t_;
 };
 
+//
+// Main function.
+//
 int main() {
 
   auto t = TBuilder()
@@ -60,8 +67,8 @@ int main() {
 
     tt = TBuilder()
       .setD0(0.1)
-      .setD1(-0.2)
-      .setD2(0.3)
+      .setD1(0.2)
+      .setD2(0.1)
       .setD3(10.0)
       .get();
 
