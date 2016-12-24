@@ -2,7 +2,7 @@
 #include <vector>
 
 // Including overtype class.
-#include "OverType.h"
+#include "over-typing.h"
 
 // Definition of first overtype A.
 struct TagA {};

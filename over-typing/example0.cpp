@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Including overtype class.
-#include "OverType.h"
+#include "over-typing.h"
 
 // User-defined class to be overtyped.
 struct T {
