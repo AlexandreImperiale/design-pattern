@@ -1,6 +1,6 @@
 
 // Definition of the generic class used for over typing.
-// The idea is to defing this class as a template class over the type T
+// The idea is to define this class as a template class over the type T
 // to be "over typed" and a Tag type used to discremenate instances of type T.
 //
 // The OverType class inherits from the type T publicly in order to recover any
