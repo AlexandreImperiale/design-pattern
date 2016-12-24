@@ -8,3 +8,6 @@ This pattern is close to the Pimpl idiom and the way member function are impleme
 
 ## over-typing pattern
 This pattern can be used to add tag to already defined type while keeping its API intact.
+
+## move-only pattern
+Imposing a user-defined type to be move only by simple inheritence from a "Move-Only" class.
