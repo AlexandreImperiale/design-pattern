@@ -11,3 +11,7 @@ This pattern can be used to add tag to already defined type while keeping its AP
 
 ## move-only pattern
 Imposing a user-defined type to be move only by simple inheritence from a "Move-Only" class.
+
+## builder pattern
+Helper class used to create instances of a class with large number of internal data that
+should potentially satisfy contrains.
