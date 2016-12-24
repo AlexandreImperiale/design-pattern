@@ -9,6 +9,11 @@
 
 template<typename T, typename Tag> struct OverType : public T {
 
-  template<typename... Args> explicit OverType(Args&&... args) : T(std::forward<Args>(args)...) {}
+  OverType(const T& t) : T(t) {}
+  OverType(T&& t) : T(std::move(t)) {}
 
+  OverType& operator=(const T& t) { T::operator=(t); return *this; }
+  OverType& operator=(T&& t) { T::operator=(std::move(t)); return *this; }
+
+  template<typename... Args> explicit OverType(Args&&... args) : T(std::forward<Args>(args)...) {}
 };

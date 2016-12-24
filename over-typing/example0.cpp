@@ -34,8 +34,8 @@ int main() {
   TB tb0(1.0);
 
   fooAB(ta0, tb0);
-//fooAB(tb0, ta0); => error ! no matching function for call to 'fooAB'
+//fooAB(tb0, ta0); // => error ! no matching function for call to 'fooAB'
   fooBA(tb0, ta0);
-//fooBA(ta0, tb0); => error ! no matching function for call to 'fooBA'
+//fooBA(ta0, tb0); // => error ! no matching function for call to 'fooBA'
 
 }
